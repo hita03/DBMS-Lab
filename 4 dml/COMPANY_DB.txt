@@ -1,0 +1,13 @@
+create table department(dname varchar(15) not null unique, dnumber integer not null, mgr_ssn char(9) not null, mgr_start_date date,constraint dnumber_pk primary key(dnumber));
+
+create table employee(fname varchar(15) not null, minit char, lanme varchar(15) not null, ssn char(9) not null, bdate date, address varchar(30), sex char, salary decimal(10,2), super_ssn char(9), dno integer not null,constraint ssn_pk primary key(ssn), constraint super_ssn_fk foreign key(super_ssn) references employee(ssn));
+
+alter table department add constraint mgr_ssn_fk foreign key(mgr_ssn) references employee(ssn);
+
+create table dept_location(dnumber integer not null, dlocation varchar(15) not null,constraint dnumber_dlocation_pk primary key(dnumber, dlocation), constraint dnumber_fk foreign key(dnumber) references department(dnumber));
+
+create table project(pname varchar(15) not null, pnumber integer not null, plocation varchar(15), dnum integer not null, constraint pnumber_pk primary key(pnumber), constraint dnum_fk foreign key(dnum) references department(dnumber));
+
+create table works_on(essn char(9) not null, pno integer not null, hours decimal(3,1) not null, constraint essn_pno_pk primary key(essn, pno), constraint pno_fk foreign key(pno) references project(pnumber), constraint essn_pk foreign key(essn) references employee(ssn));
+
+create table dependent(essn char(9) not null, dependent_name varchar(15) not null, sex char, bdate date, relationship varchar(8), constraint essn_dependent_name_pk primary key(essn, dependent_name), constraint essn_fk foreign key(essn) references employee(ssn));

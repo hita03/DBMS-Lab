@@ -1,0 +1,14 @@
+PNR,Train_No,Travel_Date,Departure,Arrival,Departure Time,Arrival Time,User_ID,Train_Type,Compartment_type,Compartment Number
+PNR004,25260,15-08-2022,Mangaluru,Chennai,19:15:00,08:00:00,ADM_003,Mail,II Class,S02
+PNR010,25260,19-08-2022,Mangaluru,Kannur,19:15:00,23:15:00,USR_007,Mail,II Class,S01
+PNR014,25260,17-08-2022,Kannur,Palakkad,23:15:00,04:30:00,USR_010,Mail,II Class,S01
+PNR015,25260,05-08-2022,Palakkad,Chennai,04:30:00,08:00:00,USR_012,Mail,II Class,S01
+PNR003,25261,01-08-2022,Chennai,Mangaluru,18:00:00,07:30:00,ADM_003,Mail,III Class,G02
+PNR006,58450,04-08-2033,Mangaluru,Bengaluru,08:00:00,10:15:00,USR_002,Fast,II Class,S01
+PNR005,58451,03-08-2022,Bengaluru,Mangaluru,06:00:00,14:00:00,USR_002,Fast,III Class,G01
+PNR012,58451,11-08-2022,Subramanya,Mangaluru,11:00:00,14:00:00,USR_009,Fast,I Class,F01
+PNR002,62620,14-08-2022,Chennai,Bengaluru,08:00:00,12:25:00,ADM_001,Superfast,I Class,F02
+PNR008,62620,02-08-2022,Chennai,Bangarpet,08:00:00,09:00:00,ADM_002,Superfast,I Class,F01
+PNR001,62621,07-08-2022,Bengaluru,Chennai,16:00:00,20:30:00,ADM_001,Superfast,I Class,F01
+PNR007,62621,07-08-2022,Bangarpet,Chennai,18:00:00,20:30:00,ADM_002,Superfast,II Class,S01
+PNR011,62621,22-08-2022,Katapadi,Chennai,19:00:00,20:30:00,USR_008,Superfast,I Class,F01
